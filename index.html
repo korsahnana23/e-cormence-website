@@ -1,0 +1,378 @@
+<!-- ================================================ -->
+<!-- ==========  STYLE CSS (APPLIES TO ALL) ========= -->
+<!-- ================================================ -->
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* NAVBAR (from W3Schools) */
+.topnav {
+  background-color: #111;
+  overflow: hidden;
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav .icon {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* HERO */
+.hero {
+    background: gray;
+    padding: 120px;
+    text-align: center;
+    color: white;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* PRODUCT GRID */
+.product-layout {
+    display: flex;
+    padding: 20px;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.product-grid img {
+    width: 100%;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+</style>
+
+<script>
+function toggleNav() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+
+
+<!-- ====================================================== -->
+<!-- ====================  PAGE 1: HOME =================== -->
+<!-- ====================================================== -->
+
+<div id="home-page">
+
+<!-- NAVBAR -->
+<div class="topnav" id="myTopnav">
+  <a href="#home-page" class="active">Home</a>
+  <a href="#products-page">Products</a>
+  <a href="#services-page">Services</a>
+  <a href="#about-page">About</a>
+  <a href="#contact-page">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+</div>
+
+<header>
+    <section class="hero">
+        <h1 style="color: blueviolet;">Shop Smart, Shop Fast</h1>
+        <p>Your No.1 Group i Store</p>
+    </section>
+</header>
+
+<main>
+    <section class="features">
+        <article>Fast Delivery</article>
+        <article>Secure Payments</article>
+        <article>Quality Goods</article>
+    </section>
+
+    <section class="categories">
+        <h2>Popular Categories</h2>
+        <div class="grid">
+            <figure><img src="electronics.jpg"width="200" height="150" alt="Electronics"><figcaption>Electronics</figcaption></figure>
+            <figure><img src="fashion.jpg"width="200" height="150" alt=""><figcaption>Fashion</figcaption></figure>
+            <figure><img src="home and kitchen.jpg"width="200" height="150" alt=""><figcaption>Home & kitchen </figure>
+            <figure><img src="sports.jpg"width="200" height="150" alt=""><figcaption>Sports</figcaption></figure>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 SmartCart E-commerce</p>
+</footer>
+
+</div>
+
+
+
+
+
+<!-- ====================================================== -->
+<!-- ===============  PAGE 2: PRODUCTS PAGE =============== -->
+<!-- ====================================================== -->
+
+<div id="products-page">
+
+<div class="topnav" id="myTopnav">
+  <a href="#home-page">Home</a>
+  <a href="#products-page" class="active">Products</a>
+  <a href="#services-page">Services</a>
+  <a href="#about-page">About</a>
+  <a href="#contact-page">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+</div>
+
+<main class="product-layout">
+
+    <aside>
+        <h3 style="color: red;">Categories</h3>
+        <ul style="color: blue;">
+            <li>Phones</li>
+            <li>Laptops</li>
+            <li>Fashion</li>
+            <li>Home Appliances</li>
+        </ul>
+    </aside>
+
+    <section class="product-grid">
+        <article>
+            <img src="wireless headset.jpg"width="200" height="150">
+            <h4>Wireless Headset</h4>
+            <p>$45</p>
+        </article>
+
+        <article>
+            <img src="smart watch.jpg"width="200" height="150">
+            <h4>Smart Watch</h4>
+            <p>$80</p>
+        </article>
+
+        <article>
+            <img src="bluetooth speaker.jpg"width="200" height="150">
+            <h4>Bluetooth Speaker</h4>
+            <p>$25</p>
+        </article>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 SmartCart E-commerce</p>
+</footer>
+
+</div>
+
+
+
+
+<!-- ====================================================== -->
+<!-- ===============  PAGE 3: ABOUT US PAGE =============== -->
+<!-- ====================================================== -->
+
+<div id="about-page">
+
+<div class="topnav" id="myTopnav">
+  <a href="#home-page">Home</a>
+  <a href="#products-page">Products</a>
+  <a href="#services-page">Services</a>
+  <a href="#about-page" class="active">About</a>
+  <a href="#contact-page">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+</div>
+
+<main>
+    <section>
+        <h1>About Our Company</h1>
+        <p>SmartCart is a modern E-commerce platform offering quality products at affordable prices.</p>
+    </section>
+
+    <section class="mission-vision">
+        <article>
+            <h2>Our Mission</h2>
+            <p>To deliver reliable and affordable products globally.</p>
+        </article>
+
+        <article>
+            <h2>Our Vision</h2>
+            <p>To become Africa’s leading online marketplace.</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>Our Team</h2>
+        <table style="background-color: aqua;" border="1">
+            <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Experience</th>
+            </tr>
+            <tr>
+                <td>Nana kwame korsah </td>
+                <td>CEO</td>
+                <td>1 year</td>
+            </tr>
+            <tr>
+                <td>Joshua Appiah</td>
+                <td>Product Manager</td>
+                <td>2 weeks</td>
+            </tr>
+            <tr>
+                <td>Linda Appiah</td>
+                <td>Sales Lead</td>
+                <td>2 weeks</td>
+            </tr>
+        </table>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 SmartCart E-commerce</p>
+</footer>
+
+</div>
+
+
+
+
+<!-- ====================================================== -->
+<!-- ===============  PAGE 4: SERVICES PAGE =============== -->
+<!-- ====================================================== -->
+
+<div id="services-page">
+
+<div class="topnav" id="myTopnav">
+  <a href="#home-page">Home</a>
+  <a href="#products-page">Products</a>
+  <a href="#services-page" class="active">Services</a>
+  <a href="#about-page">About</a>
+  <a href="#contact-page">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+</div>
+
+<main>
+    <section>
+        <h2>Our Services</h2>
+        <ul>
+            <li>Nationwide Delivery</li>
+            <li>24/7 Customer Support</li>
+            <li>Bulk Purchase Discounts</li>
+            <li>Safe Payment Gateway</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>How to Shop</h2>
+        <ol>
+            <li>Create an account</li>
+            <li>Select your desired product</li>
+            <li>Add product to cart</li>
+            <li>Make payment</li>
+            <li>Wait for delivery</li>
+        </ol>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 SmartCart E-commerce</p>
+</footer>
+
+</div>
+
+
+
+
+<!-- ====================================================== -->
+<!-- ===============  PAGE 5: CONTACT PAGE ================ -->
+<!-- ====================================================== -->
+
+<div id="contact-page">
+
+<div class="topnav" id="myTopnav">
+  <a href="#home-page">Home</a>
+  <a href="#products-page">Products</a>
+  <a href="#services-page">Services</a>
+  <a href="#about-page">About</a>
+  <a href="#contact-page" class="active">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+</div>
+
+<main>
+
+    <section>
+        <h2>Contact Us</h2>
+        <form>
+            <label>Name:</label><br>
+            <input type="text"><br>
+
+            <label>Email:</label><br>
+            <input type="email"><br>
+
+            <label>Message:</label><br>
+            <textarea></textarea><br>
+
+            <button>Submit</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Location Details</h2>
+        <table style="background-color: aqua;
+         border-radius: 8px;
+         border-style: none;
+         ;" border="1">
+            <tr>
+                <th>Branch</th>
+                <th>Location</th>
+                <th>Working Hours</th>
+            </tr>
+            <tr>
+                <td>Main Office</td>
+                <td>Accra, Ghana</td>
+                <td>8am – 6pm</td>
+            </tr>
+            <tr>
+                <td>Warehouse</td>
+                <td>Tesano</td>
+                <td>7am – 4pm</td>
+            </tr>
+        </table>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 SmartCart E-commerce</p>
+</footer>
+
+</div>
